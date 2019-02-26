@@ -1,14 +1,14 @@
 # MKS66-transform
 ##### Michael Ye
 ## Does the following:
-- create a translation matrix
-- create a scale matrix
-- create a rotation matrix about the x-axis
-- create a rotation matrix about the y-axis
-- create a rotation matrix about the z-axis
+- creates a translation matrix
+- creates a scale matrix
+- creates a rotation matrix about the x-axis
+- creates a rotation matrix about the y-axis
+- creates a rotation matrix about the z-axis
 
 ## Main routine keeps track of:
-A single edge matrix
+A single edge matrix  
 A single master transformation matrix
 
 ## Creates a parser that will interpret a script to be used to draw an image.
