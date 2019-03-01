@@ -80,16 +80,17 @@ def parse_csv(fname, points, transform, screen, color):
             add_arc(points, ints[3], ints[4], ints[5], ints[0], ints[1], ints[2])
         n += 1
     ident(transform)
-    x = make_rotX(30)
+    x = make_rotX(20)
     matrix_mult(x, transform)
-    y = make_rotY(30)
+    y = make_rotY(20)
     matrix_mult(y, transform)
     z = make_rotX(30)
     matrix_mult(z, transform)
     matrix_mult(transform, points)
     clear_screen(screen)
-    # draw_lines(points, screen, color)
-    # display(screen)
+    draw_lines(points, screen, color)
+    display(screen)
+    save_extension(screen, 'k')
     #
 
 
